@@ -22,7 +22,8 @@ namespace FluentMvcTesting
 
         bool ModelIsCorrect(IEnumerable<Genre> model)
         {
-            return model.Count() == 1 && model.First().Name == _genres[0].Name;
+            var m = model.ToList();
+            return m.Count() == 1 && m.First().Name == _genres[0].Name;
         }
 
         [Test]

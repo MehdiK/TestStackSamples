@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System.Data.Entity;
+using System.Linq;
 using System.Web.Mvc;
 using MvcMusicStore.Models;
 
@@ -6,7 +7,16 @@ namespace MvcMusicStore.Controllers
 {
     public class StoreController : Controller
     {
-        MusicStoreEntities storeDB = new MusicStoreEntities();
+        IMusicStoreEntities storeDB;
+
+        public StoreController() : this(new MusicStoreEntities())
+        {
+        }
+
+        public StoreController(IMusicStoreEntities musticStoreEntities)
+        {
+            storeDB = musticStoreEntities;
+        }
 
         //
         // GET: /Store/
@@ -35,7 +45,7 @@ namespace MvcMusicStore.Controllers
 
         public ActionResult Details(int id)
         {
-            var album = storeDB.Albums.Find(id);
+            var album = ((MusicStoreEntities)storeDB).Albums.Find(id);
 
             return View(album);
         }

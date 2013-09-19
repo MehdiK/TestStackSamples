@@ -3,6 +3,26 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BDDfy", "BDDfy\BDDfy.csproj", "{4620A3D8-DFB4-4479-911D-BBEB7C70ED41}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{83A34531-AD58-4872-9881-9376FBC21233}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{58DBE15F-33A6-4ABA-96C1-DD01E71CB47A}"
+	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		LICENSE = LICENSE
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Support", "Support", "{F75C5644-2247-47E2-8D10-0ED6DD3905D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcMusicStore", "Support\MvcMusicStore\MvcMusicStore.csproj", "{32DCD27D-A84C-4250-B657-408B3620A9AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Seleno", "Seleno\Seleno.csproj", "{89E73873-9A9C-45EC-9A94-A399FEFC4149}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,8 +33,19 @@ Global
 		{4620A3D8-DFB4-4479-911D-BBEB7C70ED41}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4620A3D8-DFB4-4479-911D-BBEB7C70ED41}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4620A3D8-DFB4-4479-911D-BBEB7C70ED41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32DCD27D-A84C-4250-B657-408B3620A9AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32DCD27D-A84C-4250-B657-408B3620A9AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32DCD27D-A84C-4250-B657-408B3620A9AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32DCD27D-A84C-4250-B657-408B3620A9AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89E73873-9A9C-45EC-9A94-A399FEFC4149}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89E73873-9A9C-45EC-9A94-A399FEFC4149}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89E73873-9A9C-45EC-9A94-A399FEFC4149}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89E73873-9A9C-45EC-9A94-A399FEFC4149}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{32DCD27D-A84C-4250-B657-408B3620A9AC} = {F75C5644-2247-47E2-8D10-0ED6DD3905D4}
 	EndGlobalSection
 EndGlobal

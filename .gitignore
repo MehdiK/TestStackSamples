@@ -12,4 +12,7 @@ obj/
 *.ncrunchsolution
 *.ncrunchproject
 *.cache
+*.mdf
+*.ldf
+*.sdf
 packages/*
